@@ -2,7 +2,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const emailFrom =
-  process.env.EMAIL_FROM || "Onboarding <noreply@argonsolutions.no>";
+  process.env.EMAIL_FROM || "Argon Onboarding <noreply@argonsolutions.no>";
 
 export async function sendWelcomeEmail(employee: {
   name: string;
@@ -17,7 +17,7 @@ export async function sendWelcomeEmail(employee: {
     subject: "Velkommen — Start ditt oppstartskurs",
     html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <div style="background-color: #1e3a5f; padding: 24px; text-align: center;">
+      <div style="background-color: #1E40AF; padding: 24px; text-align: center;">
         <h1 style="color: white; margin: 0; font-size: 24px;">Velkommen om bord!</h1>
       </div>
       <div style="padding: 24px; background: #f5f7fa;">
@@ -25,7 +25,7 @@ export async function sendWelcomeEmail(employee: {
         <p>Vi gleder oss til å ha deg med på laget! For å komme i gang må du fullføre oppstartskurset vårt.</p>
         <p>Klikk på knappen under for å starte:</p>
         <div style="text-align: center; margin: 32px 0;">
-          <a href="${onboardingUrl}" style="background-color: #1e3a5f; color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Start onboarding</a>
+          <a href="${onboardingUrl}" style="background-color: #1E40AF; color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Start onboarding</a>
         </div>
         <p style="color: #666; font-size: 14px;">Eller kopier denne lenken:</p>
         <p style="background: white; padding: 12px; border-radius: 4px; font-size: 13px; word-break: break-all; border: 1px solid #ddd;">${onboardingUrl}</p>
@@ -70,7 +70,7 @@ export async function sendReminderEmail(employee: {
     subject: "Påminnelse — Fullfør oppstartskurset ditt",
     html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <div style="background-color: #1e3a5f; padding: 24px; text-align: center;">
+      <div style="background-color: #1E40AF; padding: 24px; text-align: center;">
         <h1 style="color: white; margin: 0; font-size: 24px;">Påminnelse</h1>
       </div>
       <div style="padding: 24px; background: #f5f7fa;">
@@ -78,7 +78,7 @@ export async function sendReminderEmail(employee: {
         <p>Vi minner deg på at oppstartskurset ditt må fullføres før din startdato. Det tar ikke lang tid, og du kan gjøre det når det passer deg.</p>
         <p>Klikk på knappen under for å fortsette:</p>
         <div style="text-align: center; margin: 32px 0;">
-          <a href="${onboardingUrl}" style="background-color: #1e3a5f; color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Fortsett onboarding</a>
+          <a href="${onboardingUrl}" style="background-color: #1E40AF; color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Fortsett onboarding</a>
         </div>
         <p style="color: #666; font-size: 14px;">Eller kopier denne lenken:</p>
         <p style="background: white; padding: 12px; border-radius: 4px; font-size: 13px; word-break: break-all; border: 1px solid #ddd;">${onboardingUrl}</p>
@@ -98,7 +98,7 @@ export async function sendCompletionEmail(employee: {
     subject: "Gratulerer — Oppstartskurset er fullført!",
     html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <div style="background-color: #1e3a5f; padding: 24px; text-align: center;">
+      <div style="background-color: #1E40AF; padding: 24px; text-align: center;">
         <h1 style="color: white; margin: 0; font-size: 24px;">Gratulerer!</h1>
       </div>
       <div style="padding: 24px; background: #f5f7fa;">

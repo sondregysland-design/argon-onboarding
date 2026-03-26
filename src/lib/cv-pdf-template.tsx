@@ -10,8 +10,8 @@ import {
 } from "@react-pdf/renderer";
 import type { CVData } from "./cv-template";
 
-const HEADER_FILL = "#8EAADB";
-const COMPANY = "Offshore Marine Technology AS";
+const HEADER_FILL = "#1E40AF";
+const COMPANY = "Argon Solutions AS";
 
 Font.register({
   family: "Helvetica",

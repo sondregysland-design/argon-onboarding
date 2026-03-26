@@ -72,11 +72,11 @@ export interface CVData {
   forerkortkategorier?: string;
 }
 
-// OMT original exact colors and sizing
-const HEADER_FILL = "8EAADB"; // Light blue from original
+// Argon Solutions branding
+const HEADER_FILL = "1E40AF"; // Argon primary blue
 const FONT = "Helv";
 const FONT_SIZE = 20; // 10pt in half-points
-const COMPANY = "Offshore Marine Technology AS";
+const COMPANY = "Argon Solutions AS";
 
 // Original table 0 column widths (DXA)
 const COL_LABEL = 2371;
@@ -147,7 +147,7 @@ function loadLogo(): Buffer | null {
   try {
     const fs = require("fs");
     const path = require("path");
-    const logoPath = path.join(process.cwd(), "public", "omt-logo.png");
+    const logoPath = path.join(process.cwd(), "public", "argon-logo.svg");
     return fs.readFileSync(logoPath);
   } catch {
     return null;
@@ -601,7 +601,7 @@ export async function generateCVDocument(data: CVData): Promise<Buffer> {
                       new ImageRun({
                         data: logoBuffer,
                         transformation: { width: 100, height: 82 },
-                        type: "png",
+                        type: "svg",
                       }),
                     ],
                   })]
