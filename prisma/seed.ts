@@ -13,8 +13,8 @@ async function main() {
     update: {},
     create: {
       id: "default",
-      companyName: "OMT Elektro",
-      primaryColor: "#1e3a5f",
+      companyName: "Argon Solutions",
+      primaryColor: "#1E40AF",
       emailRecipient: "kontor@example.com",
     },
   });

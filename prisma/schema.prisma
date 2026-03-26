@@ -53,7 +53,7 @@ model CompanyConfig {
   id             String @id @default("default")
   companyName    String
   logoUrl        String?
-  primaryColor   String @default("#1e3a5f")
+  primaryColor   String @default("#1E40AF")
   emailRecipient String
   smtpHost       String?
   smtpPort       Int?

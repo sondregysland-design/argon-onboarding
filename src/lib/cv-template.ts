@@ -147,7 +147,7 @@ function loadLogo(): Buffer | null {
   try {
     const fs = require("fs");
     const path = require("path");
-    const logoPath = path.join(process.cwd(), "public", "argon-logo.svg");
+    const logoPath = path.join(process.cwd(), "public", "argon-logo.png");
     return fs.readFileSync(logoPath);
   } catch {
     return null;
@@ -601,7 +601,7 @@ export async function generateCVDocument(data: CVData): Promise<Buffer> {
                       new ImageRun({
                         data: logoBuffer,
                         transformation: { width: 100, height: 82 },
-                        type: "svg",
+                        type: "png",
                       }),
                     ],
                   })]
