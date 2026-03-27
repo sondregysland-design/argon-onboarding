@@ -31,11 +31,13 @@ export async function POST(request: NextRequest) {
     include: { steps: true },
   });
 
-  // Send welcome email with onboarding link
+  // Send welcome email with info confirmation and onboarding link
   try {
     await sendWelcomeEmail({
       name: employee.name,
       email,
+      phone: employee.phone,
+      startDate: employee.startDate,
       token: employee.token,
     });
   } catch (e) {
