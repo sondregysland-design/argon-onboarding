@@ -12,7 +12,7 @@ export async function sendWelcomeEmail(employee: {
   token: string;
 }) {
   const onboardingUrl = `${process.env.NEXT_PUBLIC_APP_URL}/onboarding/${employee.token}`;
-  const formattedDate = new Date(employee.startDate).toLocaleDateString("nb-NO", {
+  const formattedDate = employee.startDate.toLocaleDateString("nb-NO", {
     day: "numeric",
     month: "long",
     year: "numeric",
