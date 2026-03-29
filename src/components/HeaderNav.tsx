@@ -9,8 +9,8 @@ export function HeaderNav() {
   if (isOnboarding) return null;
 
   return (
-    <nav className="text-sm text-navy-200">
-      <a href="/admin" className="hover:text-white transition-colors">Admin</a>
+    <nav className="text-sm">
+      <a href="/admin" className="font-medium text-text-light hover:text-primary transition-colors">Admin</a>
     </nav>
   );
 }

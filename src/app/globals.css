@@ -17,6 +17,10 @@
   --color-navy-800: #1E40AF;
   --color-navy-900: #1E3A8A;
   --color-navy-950: #172554;
+
+  /* Semantic tokens */
+  --color-primary: #1E40AF;
+  --color-text-light: #64748B;
 }
 
 body {
