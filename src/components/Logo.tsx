@@ -12,7 +12,7 @@ export function LogoIcon({ className = "h-8 w-8" }: { className?: string }) {
         cy="105"
         rx="95"
         ry="40"
-        stroke="#6BA3F7"
+        stroke="#1E40AF"
         strokeWidth="8"
         fill="none"
         transform="rotate(-25 100 105)"
@@ -33,7 +33,7 @@ export function LogoIcon({ className = "h-8 w-8" }: { className?: string }) {
         cy="105"
         rx="95"
         ry="40"
-        stroke="#6BA3F7"
+        stroke="#1E40AF"
         strokeWidth="8"
         fill="none"
         transform="rotate(-25 100 105)"
@@ -42,9 +42,9 @@ export function LogoIcon({ className = "h-8 w-8" }: { className?: string }) {
       />
 
       {/* Accent dots */}
-      <circle cx="38" cy="55" r="10" fill="#6BA3F7" />
-      <circle cx="162" cy="75" r="7" fill="#6BA3F7" />
-      <circle cx="155" cy="145" r="10" fill="#6BA3F7" />
+      <circle cx="38" cy="55" r="10" fill="#1E40AF" />
+      <circle cx="162" cy="75" r="7" fill="#1E40AF" />
+      <circle cx="155" cy="145" r="10" fill="#1E40AF" />
     </svg>
   );
 }
