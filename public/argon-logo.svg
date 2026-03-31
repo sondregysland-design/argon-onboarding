@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <!-- Orbital ring (behind) -->
-  <ellipse cx="100" cy="105" rx="95" ry="40" fill="none" stroke="#1E40AF" stroke-width="8" transform="rotate(-25 100 105)" opacity="0.5"/>
+  <ellipse cx="100" cy="105" rx="95" ry="40" fill="none" stroke="#1E40AF" stroke-width="8" transform="rotate(-25 100 105)" opacity="0.7"/>
 
   <!-- Main A letter -->
   <path d="M100 20 L45 170 L65 170 L78 130 L122 130 L135 170 L155 170 L100 20Z" fill="#1E40AF"/>

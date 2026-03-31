@@ -16,7 +16,7 @@ export function LogoIcon({ className = "h-8 w-8" }: { className?: string }) {
         strokeWidth="8"
         fill="none"
         transform="rotate(-25 100 105)"
-        opacity="0.5"
+        opacity="0.7"
       />
 
       {/* Main A letter */}
