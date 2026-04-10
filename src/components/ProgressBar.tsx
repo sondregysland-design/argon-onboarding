@@ -8,7 +8,14 @@ export function ProgressBar({ completed, total, showLabel = true }: ProgressBarP
   const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
   return (
     <div className="flex items-center gap-3">
-      <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+      <div
+        className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden"
+        role="progressbar"
+        aria-valuenow={completed}
+        aria-valuemin={0}
+        aria-valuemax={total}
+        aria-label={`${completed} av ${total} steg fullført`}
+      >
         <div
           className="h-full bg-green-500 rounded-full transition-all duration-500"
           style={{ width: `${percentage}%` }}
